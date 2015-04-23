@@ -45,25 +45,27 @@ function returnObjectLiteral() {
 //your code here
 function MessageLog(user){
   this.user = user;
+  this.totalReceivedValue = 0;
+  this.totalSentValue = 0;
   this.sentMessageLog = [];//new Array(5);
   this.receivedMessageLog = [];// new Array(5);
-  this.logMessage = function logMessage(messageText, direction){
+  this.logMessage = function (messageText, direction){
     if(direction === 1){
       this.receivedMessageLog.unshift(messageText);
-      this.totalReceived.Value = this.totalReceived.Value + 1;
+      this.totalReceivedValue = this.totalReceivedValue + 1;
     } else if(direction === 0) {
       this.sentMessageLog.unshift(messageText);
-      this.totalSent.Value = this.totalSent.Value + 1;
+      this.totalSentValue = this.totalSentValue + 1;
     }
   }
   this.getSentMessage = function (n){
     return this.sentMessageLog[n];
   }
   this.totalSent = function(){
-    return this.totalSent.Value;
+    return this.totalSentValue;
   }
   this.totalReceived = function(){
-    return this.totalReceived.Value;
+    return this.totalReceivedValue;
   }
 }
 //end your code
