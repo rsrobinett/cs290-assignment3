@@ -43,31 +43,40 @@ function returnObjectLiteral() {
 */
 
 //your code here
+
 function MessageLog(user){
   this.user = user;
-  this.totalReceivedValue = 0;
-  this.totalSentValue = 0;
-  this.sentMessageLog = [];//new Array(5);
-  this.receivedMessageLog = [];// new Array(5);
-  this.logMessage = function (messageText, direction){
-    if(direction === 1){
-      this.receivedMessageLog.unshift(messageText);
-      this.totalReceivedValue = this.totalReceivedValue + 1;
+  this._total = {
+    _received: 0,
+    _sent: 0,
+    get received() {return this._received; },
+    set received(value) {this._received = value },
+    get sent() {return this._sent; },
+    set sent(value) {this._sent = value }
+  };
+  
+  this.sentMessageLog = new Array(5);
+  this.receivedMessageLog = new Array(5);
+  
+  this.logMessage = function(messageText, direction){
+  if(direction === 1){
+    this.receivedMessageLog.unshift(messageText);
+    this._total.received = this._total.received + 1;
     } else if(direction === 0) {
-      this.sentMessageLog.unshift(messageText);
-      this.totalSentValue = this.totalSentValue + 1;
+    this.sentMessageLog.unshift(messageText);
+    this._total.sent = this._total.sent + 1;
     }
-  }
+  };
+  
   this.getSentMessage = function (n){
     return this.sentMessageLog[n];
-  }
-  this.totalSent = function(){
-    return this.totalSentValue;
-  }
-  this.totalReceived = function(){
-    return this.totalReceivedValue;
-  }
+  };
+  
+  this.totalSent = function() { return this._total.sent; };
+  this.totalReceived = function () { return this._total.received;  };
 }
+
+
 //end your code
 
 /**

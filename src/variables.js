@@ -16,7 +16,7 @@ function variableModification(a) {
   //your code here
   plus5 = 5 + a;
   asString = a.toString();
-  yourNumberIs = "Your Number is " + a + ".";
+  yourNumberIs = "Your Number is " + a + "";// technically should have a period at the end. 
   //end your code
   return [plus5, asString, yourNumberIs, a];
 }
