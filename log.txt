@@ -1,1 +1,20 @@
-You log goes in this  file.
+Start: Sat, 25 Apr 2015 02:30:28 +0000
+End: Sat, 25 Apr 2015 03:30:28 +0000
+Tasks: minor changes in variable, adding limits to arrays in objects.
+
+Start: Thu, 23 Apr 2015 04:02:53 +0000
+End: Thu, 23 Apr 2015 06:02:53 +0000
+Tasks: object making counts work
+
+Start: Thu, 16 Apr 2015 00:02:34 +0000
+End: Thu, 23 Apr 2015 05:40:27 +0000
+Tasks: object and function additions
+(worked on this over several days, but wasn't able to push)
+
+Start: Thu, 16 Apr 2015 00:02:34 +0000
+End: Thu, 16 Apr 2015 01:02:34 +0000
+Tasks: attempt 1 to pass variables test
+
+Start: Sun, 12 Apr 2015 15:32:07 -0700
+End: Sun, 12 Apr 2015 16:32:07 -0700
+Tasks: initial commit of data from osu repo
