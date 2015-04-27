@@ -1,3 +1,39 @@
+Start: Sun, 26 Apr 2015 18:36:44 -0700
+End: Sun, 26 Apr 2015 19:35:10 -0700
+Tasks: final bug fixes
+
+Start: Sun, 26 Apr 2015 17:40:04  -0700
+End: Sun, 26 Apr 2015 18:36:44 -0700
+Tasks: more bug fixes and adding language filtering
+
+Start: Sun, 26 Apr 2015 12:40:04 -0700
+End: Sun, 26 Apr 2015 17:40:04 -0700
+Tasks: removing from favorites and bug fixes
+
+Start: Sat, 25 Apr 2015 22:18:22 -0700
+End: Sat, 25 Apr 2015 23:18:22 -0700
+Tasks: favorites moving on refresh only
+
+Start: Sat, 25 Apr 2015 20:11:59 -0700
+End: Sat, 25 Apr 2015 22:11:59 -0700
+Tasks: fixing pagination and writing to local storage
+
+Start: Sat, 25 Apr 2015 14:42:33 -0700
+End: Sat, 25 Apr 2015 16:42:33 -0700
+Tasks: pagination and language
+
+Start: Sat, 25 Apr 2015 10:53:15 -0700
+End: Sat, 25 Apr 2015 13:53:15 -0700
+Tasks: creating GistItem object and adding styling
+
+Start: Fri, 24 Apr 2015 18:26:12 -0700
+End: Fri, 24 Apr 2015 23:26:12 -0700
+Tasks: gist call returning json
+
+Start: Sat, 25 Apr 2015 04:38:35 +0000
+End: Sat, 25 Apr 2015 05:38:35 +0000
+Tasks: file structure and initial attempt at gist request call
+
 Start: Sat, 25 Apr 2015 02:30:28 +0000
 End: Sat, 25 Apr 2015 03:30:28 +0000
 Tasks: minor changes in variable, adding limits to arrays in objects.
@@ -18,3 +54,5 @@ Tasks: attempt 1 to pass variables test
 Start: Sun, 12 Apr 2015 15:32:07 -0700
 End: Sun, 12 Apr 2015 16:32:07 -0700
 Tasks: initial commit of data from osu repo
+
+

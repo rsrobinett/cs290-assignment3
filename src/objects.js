@@ -54,24 +54,26 @@ function MessageLog(user){
     get sent() {return this._sent; },
     set sent(value) {this._sent = value }
   };
-  
+
   this.sentMessageLog = new Array(5);
   this.receivedMessageLog = new Array(5);
-  
+
   this.logMessage = function(messageText, direction){
   if(direction === 1){
     this.receivedMessageLog.unshift(messageText);
+    this.receivedMessageLog.length = 5; 
     this._total.received = this._total.received + 1;
     } else if(direction === 0) {
     this.sentMessageLog.unshift(messageText);
+    this.sentMessageLog.length = 5;
     this._total.sent = this._total.sent + 1;
     }
   };
-  
+
   this.getSentMessage = function (n){
     return this.sentMessageLog[n];
   };
-  
+
   this.totalSent = function() { return this._total.sent; };
   this.totalReceived = function () { return this._total.received;  };
 }
